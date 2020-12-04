@@ -18,6 +18,7 @@ const AdminPage = () => {
                  config.local_backend = true;
 
             // how to type this.
+            // @ts-ignore
             CMS.init({config});
         })();
     }, []);
