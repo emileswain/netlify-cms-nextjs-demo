@@ -1,0 +1,42 @@
+{
+  "name": "netlify-cms-nextjs-demo",
+  "version": "1.0.0",
+  "description": "Debugging NetlifyCMS NextJS implementation.",
+  "main": "index.js",
+  "repository": "git@github.com:emileswain/netlify-cms-nextjs-demo.git",
+  "author": "emile.swain <emile.swain@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "cms": "npx netlify-cms-proxy-server",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export -o ./dist"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@types/node": "^14.14.10",
+    "@types/react": "^17.0.0",
+    "babel-plugin-inline-react-svg": "^1.1.2",
+    "cross-env": "^7.0.3",
+    "date-fns": "^2.16.1",
+    "globby": "^11.0.1",
+    "gray-matter": "^4.0.2",
+    "netlify-cms-app": "^2.14.3",
+    "next": "^10.0.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.6.2",
+    "next-mdx-remote": "^1.0.0",
+    "next-transpile-modules": "^6.0.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^2.2.1",
+    "prismjs": "^1.22.0",
+    "raw-loader": "^4.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.29.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2"
+  }
+}
